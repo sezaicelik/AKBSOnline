@@ -1,0 +1,59 @@
+﻿
+@media (min-width: 768px)
+.masthead .intro-body .brand-heading {
+    font-size: 70px;
+}
+
+#mainNav {
+    background-color:#292b2c;
+    /*position:fixed;*/
+}
+/*.container {
+    background-color: white;
+}*/
+.masthead {
+    color: #292b2c;
+
+}
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    color: #292b2c;
+}
+body {
+    color: #292b2c;
+    background-color: #f7f7f9;
+}
+
+}
+/*.download-section {
+    background-color: white;
+}*/
+
+
+.btn-default {
+    border: 1px solid #42dca3;
+    color: #292b2c;
+
+}
+
+.btn-circle {
+    color: #292b2c;
+    border: 3px solid #292b2c;
+}
+ h2 {
+    color: white;
+}
+
+.btn-default {
+    color: #292b2c;
+}
+
+.containerContactRight{
+    float: right;
+    width: 50%;
+}
+
+/*.containerContactLeft{
+    float: left;
+    width: 50%;
+}*/

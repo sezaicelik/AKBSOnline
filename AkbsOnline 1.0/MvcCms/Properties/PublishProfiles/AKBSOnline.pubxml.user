@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAA/uq9lljxt06EU6kUtgGnxQAAAAACAAAAAAAQZgAAAAEAACAAAACNsi6Uiebvm8ogkYGFb7dLsEYYH0//w5fvmo52zN9OnQAAAAAOgAAAAAIAACAAAADW3GmYMKpnqUAfz71qxfeAMChpmXR2hONabKN8xGWcuCAAAAASCzqFB5QQXQoBh3yveQEPoI/rwYdkgQV2ciX+82rlr0AAAAA7IziSMTLeQcqLjTB4DarccLZTtwNvHRQe+8yRgAvRGw2yVOIWZPBpGY5WrICSzlFuAUOMQVaWOXFZMCOtA5kU</EncryptedPassword>
+    <_PublishTargetUrl>ftp://95.173.170.161</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="Areas/Admin/Views/Admin/AdminMenu.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Index.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/Login.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Admin/_menuLink.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Post/Create.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Post/Delete.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Post/Edit.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Post/Index.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Post/_postForm.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Post/_PostLayout.cshtml">
+      <publishTime>04/20/2017 22:11:41</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/EditorTemplates/TagEditor.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Shared/_AdminLayout.cshtml">
+      <publishTime>04/20/2017 12:59:14</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Tag/Delete.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Tag/Edit.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/Tag/Index.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/Create.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/Edit.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/User/Index.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Areas/Admin/Views/web.config">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>03/02/2015 09:32:26</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/MvcCms.dll">
+      <publishTime>04/23/2017 11:32:03</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Deployment.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="bin/System.Web.Webpages.Razor.dll">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="css/bootstrap-float-label.min.css">
+      <publishTime>04/20/2017 12:58:33</publishTime>
+    </File>
+    <File Include="css/bootstrap.min.css">
+      <publishTime>04/20/2017 20:43:55</publishTime>
+    </File>
+    <File Include="css/Site.css">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Data/CmsContext.cs">
+      <publishTime>04/22/2017 00:56:06</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="js/admin.js">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="js/jquery-2.1.1.min.js">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="js/jquery-ui.min-1.11.1.js">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>04/23/2017 10:40:46</publishTime>
+    </File>
+    <File Include="Views/Home/Create.cshtml">
+      <publishTime>04/20/2017 22:12:06</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>04/20/2017 11:25:07</publishTime>
+    </File>
+    <File Include="Views/Home/List.cshtml">
+      <publishTime>04/20/2017 11:25:07</publishTime>
+    </File>
+    <File Include="Views/Home/Post.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Views/Home/Tag.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Views/Home/_recordForm.cshtml">
+      <publishTime>04/21/2017 14:52:19</publishTime>
+    </File>
+    <File Include="Views/Home/_renderPost.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Views/Home/_renderRecord.cshtml">
+      <publishTime>04/20/2017 12:36:30</publishTime>
+    </File>
+    <File Include="Views/Home/_renderTags.cshtml">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>04/20/2017 13:01:06</publishTime>
+    </File>
+    <File Include="Views/web.config">
+      <publishTime>02/26/2017 07:45:50</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>04/23/2017 11:38:42</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
