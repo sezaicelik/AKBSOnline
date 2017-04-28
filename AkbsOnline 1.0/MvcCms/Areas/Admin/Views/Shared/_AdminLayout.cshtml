@@ -4,9 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
-    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/Site.css" rel="stylesheet" />
-    <link href="~/css/bootstrap-float-label.min.css" rel="stylesheet" />
+    <link href="~/vendor/bootstrap/css/bootstrap-float-label.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
 </head>
 <body>
@@ -19,10 +19,8 @@
                     @{
                         Html.RenderAction("AdminMenu", new { controller = "admin", area = "admin" });
                         Html.RenderAction("AuthenticationLink", new { controller = "admin", area = "admin" });
-                        
                     }
                 </ul>
-
             </div>
         </div>
     </div>
