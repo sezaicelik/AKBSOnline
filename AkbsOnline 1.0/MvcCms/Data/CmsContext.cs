@@ -11,7 +11,7 @@ namespace MvcCms.Data
 {
     public class CmsContext : IdentityDbContext<CmsUser>
     {
-        public CmsContext(): base("akbsonli_AKBS2") 
+        public CmsContext(): base("akbsonli_AKBS") 
         {
 
         }
