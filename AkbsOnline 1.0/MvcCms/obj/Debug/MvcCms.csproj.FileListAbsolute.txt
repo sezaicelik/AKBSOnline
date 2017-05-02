@@ -42,6 +42,6 @@ C:\GitHub\AKBSOnline\AkbsOnline 1.0\MvcCms\bin\System.Web.Webpages.Deployment.xm
 C:\GitHub\AKBSOnline\AkbsOnline 1.0\MvcCms\bin\System.Web.Webpages.Razor.xml
 C:\GitHub\AKBSOnline\AkbsOnline 1.0\MvcCms\bin\System.Web.Helpers.xml
 C:\GitHub\AKBSOnline\AkbsOnline 1.0\MvcCms\bin\System.Web.Mvc.xml
+C:\GitHub\AKBSOnline\AkbsOnline 1.0\MvcCms\obj\Debug\MvcCms.csprojResolveAssemblyReference.cache
 C:\GitHub\AKBSOnline\AkbsOnline 1.0\MvcCms\obj\Debug\MvcCms.dll
 C:\GitHub\AKBSOnline\AkbsOnline 1.0\MvcCms\obj\Debug\MvcCms.pdb
-C:\GitHub\AKBSOnline\AkbsOnline 1.0\MvcCms\obj\Debug\MvcCms.csprojResolveAssemblyReference.cache
