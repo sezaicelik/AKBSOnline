@@ -10,3 +10,7 @@
 #portfolio .portfolio-item .portfolio-link {
     max-width: 200px;
 }
+.field-validation-error {
+   display: block;
+   text-align:right;
+}

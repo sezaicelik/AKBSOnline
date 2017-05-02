@@ -1,10 +1,9 @@
-﻿@model MvcCms.Models.Record
+﻿@using MvcCms.Controllers
+@model MvcCms.Models.Record
 
 
-
-
-<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
-<script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>
+@*<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.unobtrusive.min.js")" type="text/javascript"></script>*@
 
 @using (Html.BeginForm("AddRecord", "Home", FormMethod.Post, new { id = "xmlform" }))
 {
@@ -15,22 +14,28 @@
         <div class="form-group">
             <hr /><hr />
             <h3 class="col-md-offset-3">Kişisel Bilgiler</h3>
-            <div class="has-float-label col-md-3 col-md-offset-3">
-                @Html.EditorFor(model => model.Adi, new { htmlAttributes = new { @class = "form-control ", placeholder = @Html.DisplayNameFor(m => m.Adi) } })
-                @Html.LabelFor(model => model.Adi, htmlAttributes: new { @style = "padding-left: 15px;" })
-                @Html.ValidationMessageFor(m => m.Adi, "", new { @class = "text-danger" })
+            <div class="col-md-3 col-md-offset-3">
+                <div class="has-float-label">
+                    @Html.EditorFor(model => model.Adi, new { htmlAttributes = new { @class = "form-control ", placeholder = @Html.DisplayNameFor(m => m.Adi) } })
+                    @Html.LabelFor(model => model.Adi, htmlAttributes: new { @style = "padding-left: 15px;" })
+                </div>
+                @Html.ValidationMessageFor(model => model.Adi, "", new { @class = "text-danger" })
             </div>
+
             <div class="col-md-3">
-                @Html.EditorFor(model => model.Soyadi, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Adi) } })
-                @Html.LabelFor(model => model.Soyadi, htmlAttributes: new { @style = "padding-left: 15px;" })
+                <div class="has-float-label">
+                    @Html.EditorFor(model => model.Soyadi, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Soyadi) } })
+                    @Html.LabelFor(model => model.Soyadi, htmlAttributes: new { @style = "padding-left: 15px;" })
+                </div>
                 @Html.ValidationMessageFor(model => model.Soyadi, "", new { @class = "text-danger" })
             </div>
         </div>
         <div class="form-group">
             <div class="has-float-label col-md-3 col-md-offset-3">
-                @Html.EditorFor(model => model.Cinsiyet, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Adi) } })
-                @Html.LabelFor(model => model.Cinsiyet, htmlAttributes: new { @style = "padding-left: 15px;" })
-                @Html.ValidationMessageFor(model => model.Cinsiyet, "", new { @class = "text-danger" })
+                @Html.DropDownListFor(model => model.SelectedCinsiyetId, new SelectList(Model.Cinsiyet, "Value", "Text"))
+                @*@Html.EditorFor(model => model.Cinsiyet, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Adi) } })
+                    @Html.LabelFor(model => model.Cinsiyet, htmlAttributes: new { @style = "padding-left: 15px;" })
+                    @Html.ValidationMessageFor(model => model.Cinsiyet, "", new { @class = "text-danger" })*@
             </div>
             <div class="has-float-label col-md-3">
                 @Html.EditorFor(model => model.MedeniHali, new { htmlAttributes = new { @class = "form-control", placeholder = @Html.DisplayNameFor(m => m.Adi) } })
@@ -190,46 +195,16 @@
     </div>
 }
 
+<script src="vendor/jquery/jquery.min.js"></script>
+@Scripts.Render("~/bundles/jqueryval")
+
+@*@section scripts {
+        @Scripts.Render("~/bundles/jqueryval")
+        @Scripts.Render("~/bundles/extras")
+    }*@
 
 
 
-@*<div class="form-group input-group">
-        <span class="has-float-label">
-            <input class="form-control" id="first" type="text" placeholder="Name" />
-            <label for="first">First</label>
-        </span>
-        <label class="has-float-label">
-            <input class="form-control" type="text" placeholder="Surname" />
-            <span>Last</span>
-        </label>
-    </div>
 
-    <div class="form-group input-group">
-        <span class="input-group-addon"></span>
-        <label class="has-float-label">
-            <input class="form-control" type="email" placeholder="email@example.com" value="email@example.com" />
-            <span>Email</span>
-        </label>
-    </div>
-
-    <div class="form-group has-float-label">
-        <input class="form-control" id="password" type="password" placeholder="••••••••" />
-        <label for="password">Password</label>
-    </div>
-
-    <label class="form-group has-float-label">
-        <select class="form-control custom-select">
-            <option selected>United States</option>
-            <option>Canada</option>
-            <option>..</option>
-        </select>
-        <span>Country</span>
-    </label>
-
-    <div class="form-group">
-        <label class="custom-control custom-checkbox">
-            <input class="custom-control-input" type="checkbox" />
-            <span class="custom-control-indicator"></span>
-            <span class="custom-control-description">Subscribe to newsletter</span>
-        </label>
-    </div>*@
+@*@Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/extras")*@

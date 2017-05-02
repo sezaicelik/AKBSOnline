@@ -18,15 +18,20 @@ namespace MvcCms.Controllers
         private readonly IPostRepository _posts;
         private readonly IRecordRepository _records;
         private readonly IUserRepository _users;
+        private readonly IStaticInputRepository _staticInputs;
         private readonly int _pageSize = 2;
         //test 123
-        public HomeController() : this(new PostRepository(), new RecordRepository(), new UserRepository()) { }
+        public HomeController() : this(new PostRepository(), new RecordRepository(), new UserRepository()
+            , new StaticInputRepository())
+        { }
 
-        public HomeController(IPostRepository postRepository, IRecordRepository recordRepository, IUserRepository userRepository)
+        public HomeController(IPostRepository postRepository, IRecordRepository recordRepository
+            , IUserRepository userRepository, IStaticInputRepository staticInputRepository)
         {
             _posts = postRepository;
             _records = recordRepository;
             _users = userRepository;
+            _staticInputs = staticInputRepository;
         }
 
         // GET: Default
@@ -49,7 +54,18 @@ namespace MvcCms.Controllers
         {
             MainPage mp = new MainPage();
             mp.Record = new Record();
+            //{
+            //    Cinsiyet = GetGender()
+            //};
+            mp.Record.Cinsiyet = await _staticInputs.GetGender();
             mp.RecordList = await _records.GetAllAsync();
+            //var x = await _staticInputs.GetGenderAsync();
+            //var y = (from product in x
+            //                    select new SelectListItem
+            //                    {
+            //                        Text = product.Text.ToString(),
+            //                        Value = product.Value.ToString(),
+            //                    }).ToList();
             return View(mp);
         }
 
@@ -91,7 +107,7 @@ namespace MvcCms.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> AddRecord(Record model)
         {
-            if (ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
                 //Save or whatever you want to do 
             }
@@ -160,6 +176,42 @@ namespace MvcCms.Controllers
             return await _users.GetUserByNameAsync(User.Identity.Name);
         }
 
+//        public async Task<IEnumerable<SelectListItem>> GetGender()
+//        {
+//            SelectList s;
+//            using (var db = new CmsContext())
+//            {
+//                return await db.StaticInputs
+//                    .Where(p => p.DropDownId == "Gender");
+                    
+//                s = new SelectList(Genders, "Value", "Text");
+
+//                //var Genders = db.StaticInputs
+//                //    .Where(p => p.DropDownId == "Gender")
+//                //    .Select(x =>
+//                //                new SelectListItem
+//                //                {
+//                //                    Value = x.Value.ToString(),
+//                //                    Text = x.Text.ToString()
+//                //                });
+//                //s = new SelectList(Genders, "Value", "Text");
+//            }
+
+
+//            return s;
+//        }
+
+//        public static IEnumerable<StaticInput2> Colors = new List<StaticInput2> {
+//            new StaticInput2 {
+//        GenderId = 1,
+//        Name = "Red"
+//    },
+//    new StaticInput2 {
+//        GenderId = 2,
+//        Name = "Blue"
+//    }
+//};
+
     }
 
     [AttributeUsage(AttributeTargets.Method, AllowMultiple = false, Inherited = true)]
@@ -183,4 +235,5 @@ namespace MvcCms.Controllers
             return isValidName;
         }
     }
+
 }

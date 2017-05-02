@@ -18,6 +18,7 @@ namespace MvcCms.Data
         public DbSet<Post> Posts { get; set; }
         public DbSet<Record> Records { get; set; }
         public DbSet<Tesis> Tesisler { get; set; }
+        public DbSet<StaticInput> StaticInputs { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -49,6 +50,9 @@ namespace MvcCms.Data
                 .HasKey(e => e.Id)
                 .Property(e => e.Id)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
+
+            modelBuilder.Entity<StaticInput>()
+                .HasKey(e => e.Id);
         }
     }
 }

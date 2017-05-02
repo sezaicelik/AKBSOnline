@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
 using System.Data.Entity;
+using System.Web.Mvc;
 
 namespace MvcCms.Data
 {
@@ -102,6 +103,23 @@ namespace MvcCms.Data
                 db.SaveChanges();
             }
         }
+
+        //public IEnumerable<SelectListItem> GetGender()
+        //{
+        //    using (var db = new CmsContext())
+        //    {
+        //        var Genders = db.Records
+        //            .Include(p => p.)
+        //            .Where(p => p.DropDownId == "Gender")
+        //            .Select(x =>
+        //                        new SelectListItem
+        //                        {
+        //                            Value = x.Value.ToString(),
+        //                            Text = x.Text.ToString()
+        //                        });
+        //        return new SelectList(Genders, "Value", "Text");
+        //    }
+        //}
 
         public Task<IEnumerable<Record>> GetRecordsByAuthorAsync(string authorId)
         {

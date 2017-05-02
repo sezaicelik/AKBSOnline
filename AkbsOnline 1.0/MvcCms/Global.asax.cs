@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.Optimization;
 using System.Web.Routing;
 
 namespace MvcCms
@@ -14,11 +15,11 @@ namespace MvcCms
     {
         protected void Application_Start()
         {
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
             AreaRegistration.RegisterAllAreas();
+            RouteConfig.RegisterRoutes(RouteTable.Routes);
 
             AuthDbConfig.RegisterAdmin();
-
+            BundleConfig.RegisterBundles(BundleTable.Bundles);
             ModelBinders.Binders.Add(typeof(Post), new PostModelBinder());
         }
     }

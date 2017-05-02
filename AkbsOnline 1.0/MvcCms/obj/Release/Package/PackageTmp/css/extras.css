@@ -1,0 +1,12 @@
+.btn-xl {
+    color: #222;
+    
+}
+#portfolio .portfolio-item .portfolio-link .portfolio-hover {
+    width: 100%;
+}
+
+
+#portfolio .portfolio-item .portfolio-link {
+    max-width: 200px;
+}
